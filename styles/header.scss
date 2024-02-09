@@ -1,0 +1,123 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba($white, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+
+  .container {
+    width: 100%;
+
+    @include flex(center, space-between, none);
+    nav {
+      a {
+        margin: 0 $xl-2;
+      }
+    }
+  }
+}
+
+.logo {
+  z-index: 1000;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button {
+  text-transform: capitalize;
+  color: #ffffff;
+  width: max-content !important;
+  padding: 0.8rem 1.2rem;
+  background-color: $green;
+  font-size: $md;
+  border-radius: 50px;
+  box-shadow: $shadow-md;
+  cursor: pointer;
+}
+
+.activeLink {
+  position: relative;
+  color: $green;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+  }
+}
+
+.contact-link {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1045px) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .openMenu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1000vh;
+      padding: 20px;
+      padding-top: 95px;
+      background: $dark;
+      display: flex;
+      flex-direction: column;
+      z-index: 999;
+
+      a {
+        width: 100%;
+        display: block;
+        display: flex;
+        margin-bottom: 30px !important;
+      }
+    }
+
+    .button-primary {
+      display: none;
+    }
+  }
+
+  .activeLink {
+    &::after {
+      display: none;
+    }
+  }
+
+  .burger-menu {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .contact-link {
+    display: block;
+  }
+}
