@@ -27,11 +27,9 @@ export const expertise = [
     title: "Social Media Marketing",
     cover: "../images/e1.jpg",
     desc: [
-      { text: "Web design" },
-      { text: "Web development" },
-      { text: "Custom icons & illustrations" },
-      { text: "Hosting" },
-      { text: "Website audit" },
+      {
+        text: "Whether you're looking to increase brand awareness, drive website traffic, or generate leads, we have the tools and knowledge to help you succeed",
+      },
     ],
   },
   {
@@ -39,10 +37,9 @@ export const expertise = [
     title: "Pay-Per-Click (PPC)",
     cover: "../images/e2.jpg",
     desc: [
-      { text: "Social media marketing" },
-      { text: "Marketing campaigns" },
-      { text: "Markting management" },
-      { text: "SEO" },
+      {
+        text: " Our experienced team of digital marketers utilizes cutting-edge tools and strategies to create highly targeted campaigns that deliver results.",
+      },
     ],
   },
   {
@@ -50,10 +47,9 @@ export const expertise = [
     title: "Search Engine Optimization",
     cover: "../images/e3.jpg",
     desc: [
-      { text: "E-Commerce website design" },
-      { text: "WooCommerce" },
-      { text: "Content management" },
-      { text: "Hosting" },
+      {
+        text: "We employ a combination of on-page and off-page optimization techniques, keyword research, content optimization, link building, and technical SEO to enhance website performance and search engine rankings.",
+      },
     ],
   },
   {
@@ -61,9 +57,9 @@ export const expertise = [
     title: "Email Marketing Campaigns",
     cover: "../images/e4.jpg",
     desc: [
-      { text: "Visual identity" },
-      { text: "Branding for social media" },
-      { text: "Custom illustrations" },
+      {
+        text: "By optimizing subject lines, content, and timing, we maximize open rates and click-through rates, elevating your brand visibility and driving traffic to your website.",
+      },
     ],
   },
 ];

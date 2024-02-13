@@ -22,11 +22,11 @@ export const Card = ({ data, caption, show, path }) => {
           </div>
 
           {show && (
-            <ul>
+            <div className="service-card-text">
               {data.desc.map((text, i) => (
-                <li key={i}> - {text.text}</li>
+                <p key={i}>{text.text}</p>
               ))}
-            </ul>
+            </div>
           )}
         </div>
       </div>
